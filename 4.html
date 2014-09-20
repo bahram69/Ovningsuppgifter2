@@ -1,12 +1,18 @@
 <html>
 	<head>
 		<script>
-			var text;
-			text = prompt("Ange ditt för och efternamn här!");
-			var index = text.
+			var name;
+			name = prompt("Ange ditt för och efternamn här!");
+			var initials = "";
+            var wordArray = name.split(" ");
+            for(var i=0;i<wordArray.length;i++)
+            {
+            initials += wordArray[i].substring(0,1);
+            }
+            alert("dina initialer är:" + initials);
 		</script>
 	</head>
 	<body>
-	
+
 	</body>
 </html>
